@@ -3,6 +3,6 @@ import controller from '../controllers/users'
 
 const router = express.Router()
 
-router.get('', controller.test)
+router.post('', controller.addUser)
 
 export = router

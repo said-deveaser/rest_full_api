@@ -4,16 +4,17 @@ import mongoose from "mongoose";
 
 const NAMESPACE = 'api users.ts'
 
-const Test:RequestHandler = (req, res, next) => {
-    return res.status(200).json({test: 'tset'})
+const addUser:RequestHandler = (req, res, next) => {
+
+    return res.status(200).json({addUser: req.body})
 }
 
 const Test2:RequestHandler = (req, res, next) => {
-    return res.status(200).json({test: 'tset2'})
+    return res.status(200).json({addUser: 'tset2'})
 }
 
 
 export default  {
-    test: Test,
+    addUser: addUser,
     test2: Test2
 }

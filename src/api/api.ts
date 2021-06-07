@@ -7,8 +7,8 @@ const NAMESPACE = 'Api.ts'
 
 const router = express.Router()
 
-router.use(mongooseMiddleware)
+// router.use(mongooseMiddleware)
 
-router.use('/users', users)
+router.use('/user', users)
 
 export = router
